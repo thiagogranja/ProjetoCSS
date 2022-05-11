@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Granja</title>
+    <script src="https://kit.fontawesome.com/c067e3ba0e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="2c5d4ebefe52422e904151d2458f0c06.png" alt="Logo Thiago Granja" width="150" height="150">
+        </div>
+        <ul>
+            <li>
+            <a target="blank" href="https://github.com/thiagogranja/">github</a>
+            </li>
+            <li>
+            <a target="blank" href="mailto:thiago.granja@hotmail.com">e-mail</a> 
+            </li>
+            <li>
+            <a target="blank" href="https://wa.me/87996665496">whatsapp</a> 
+            </li>
+
+        </ul>
+    </header>
+    <main>  
+        <section class="container">
+
+            <div class="name">
+
+                <h1> Thiago Granja</h1>
+
+                <h5>Front-End Developer</h5>
+
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+            <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempore, nostrum optio sit provident ipsum nisi esse dolorem possimus tenetur aut, sint dignissimos id? Dolorem ipsam illo vero iste aliquam.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>
+                        deixe seu contato!
+                    </p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email">
+                    <button> enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
